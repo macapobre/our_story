@@ -13,7 +13,7 @@ function initTimer() {
     
     if (!dBox) return; // Exit if not on landing layout
 
-    const anniversary = new Date(2024, 9, 14); // Oct 14, 2024
+    const anniversary = new Date(2023, 2, 21); // Feb 21, 2023
 
     function updateTimer() {
         const now = new Date();
