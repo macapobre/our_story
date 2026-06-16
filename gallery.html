@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">❤️ Us</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="memories.html">Memories</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="timeline.html">Timeline</a>
+        </div>
+    </nav>
+
+    <h1 class="board-title">Our Polaroid Gallery</h1>
+    <p class="board-subtitle">Snapshots of our favorite adventures.</p>
+
+    <div class="album-container">
+        <div class="album-grid" id="dynamic-gallery"></div>
+    </div>
+
+    <div class="admin-form-panel">
+        <h4>✨ Pin a New Photo Frame</h4>
+        <input type="text" id="photo-url" placeholder="Image file name (e.g., photo.jpg)">
+        <input type="text" id="photo-caption" placeholder="Write a cute caption...">
+        <button class="admin-btn" onclick="addNewPhoto()">Hang Polaroid</button>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
