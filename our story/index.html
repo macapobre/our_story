@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">❤️ Us</a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="memories.html">Memories</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="timeline.html">Timeline</a>
+        </div>
+    </nav>
+
+    <div class="dashboard-wrapper">
+        
+        <div class="dash-left">
+            <div class="welcome-box">
+                <span class="hero-badge">Our Universe</span>
+                <h1>Our Love Story</h1>
+                <p class="hero-subtext">Every second spent with you is a new favorite page added to our book.</p>
+            </div>
+
+            <div class="countdown-grid">
+                <div class="time-card"><span id="days" class="time-number">00</span><span class="time-label">Days</span></div>
+                <div class="time-card"><span id="hours" class="time-number">00</span><span class="time-label">Hours</span></div>
+                <div class="time-card"><span id="minutes" class="time-number">00</span><span class="time-label">Mins</span></div>
+                <div class="time-card"><span id="seconds" class="time-number">00</span><span class="time-label">Secs</span></div>
+            </div>
+
+            <div class="sticky-note homepage-note">
+                <h3>💌 Message for Today</h3>
+                <p id="homepage-note-text">"Thinking about you! Click the button below to update this message anytime."</p>
+                <div class="note-edit-inputs">
+                    <input type="text" id="new-note-input" placeholder="Type a new message for her...">
+                    <button class="joke-btn" onclick="updateHomepageNote()">Update Note</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="dash-right">
+            <div class="polaroid-frame featured-polaroid">
+                <div class="photo-box" id="homepage-photo-display" ondragover="event.preventDefault()" ondrop="handleHomepageFileDrop(event)">
+                    <img src="Pinning Ceremony.jpg" style="width:100%; aspect-ratio:1; object-fit:cover;" alt="Us">
+                </div>
+                <div class="photo-edit-inputs file-input-wrapper">
+                    <input type="file" id="homepage-photo-file" accept="image/*" onchange="handleHomepageFileSelect(event)">
+                    <label for="homepage-photo-file" class="file-btn">Choose Photo</label>
+                    <span class="file-name" id="homepage-photo-filename">No file chosen</span>
+                    <input type="text" id="homepage-photo-url" placeholder="Change filename (e.g., us.jpg)">
+                    <button class="joke-btn" onclick="updateHomepagePhoto()">Change Photo</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
