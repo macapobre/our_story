@@ -8,13 +8,13 @@ const myGalleryData = [
 // DEFAULT STARTING TIMELINE EVENTS
 const myTimelineData = [
     {
-        date: "October 14, 2024",
+        date: "November 5, 2022",
         title: "The First Sight",
         description: "The day we spoke for the first time and completely forgot about the rest of the room.",
         position: "left"
     },
     {
-        date: "November 02, 2024",
+        date: "February 21, 2023",
         title: "Making It Official",
         description: "When we decided that 'you and me' sounded a whole lot better than just 'me'.",
         position: "right"
